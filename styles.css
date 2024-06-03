@@ -1,0 +1,322 @@
+
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('./resources/fonts/TTLakes-Regular.eot');
+    src: url('./resources/fonts/TTLakes-Regular.woff') format('woff'),
+    url('./resources/fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+ @font-face {
+        font-family: 'TT Lakes Bold';
+        src: url('./resources/fonts/TTLakes-Bold.eot');
+        src: url('./resources/fonts/TTLakes-Bold.woff') format('woff'),
+        url('./resources/fonts/TTLakes-Bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+@font-face {
+        font-family: 'TT Lakes Medium';
+        src: url('./resources/fonts/TTLakes-Medium.eot');
+        src: url('./resources/fonts/TTLakes-Medium.woff') format('woff'),
+        url('./resources/fonts/TTLakes-Medium.ttf') format('truetype');
+         font-weight: normal;
+        font-style: normal;
+    }
+body {
+    background-color: #F8F8F8;
+    margin: 0;
+}
+nav {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    background-color: white;
+    border-bottom: solid 1px;
+    border-color: #D9FFF5; 
+    width: auto;
+    height: 88px;
+    align-content: center;
+    margin-bottom: 24px;
+}
+.main-info {
+    display: flex;
+    flex-direction:column;
+ 
+}
+.main-info__icon {
+    
+    align-content: center;
+}
+.main-info__header {
+    
+    margin-left: 10px;
+    justify-content:flex-start;
+    align-content: center;
+    color: #1B1C21;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%; 
+    min-height: 510px;
+}
+.main-info__top{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    height: 40px;
+    margin-bottom: 24px;
+}
+h1{
+    font-family: 'TT Lakes Bold';
+}
+.main-info__menu {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+.main-info__brands, .main-info__repairdevice, .main-info__extraservice, .main-info__prices, .main-info__adress, .main-info__specialprice, .main-info__reviews {
+    padding: 8px;
+}
+.main-info__article {
+    margin-left: 16px;
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+}
+.main-info__text{
+    margin-bottom: 16px;
+}
+.main-info_everytext{
+    display: flex;
+    flex-direction: column; 
+}
+.main-info__readmore {
+    display: flex;
+    flex-direction: row;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    align-content: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.main-info__icons{
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}   
+
+
+@media (max-width: 320px) {                      
+    .menu-icons__burger{
+        margin: auto;
+        justify-content:flex-start;
+    }
+    .menu-icons__logo{    
+        margin: auto;
+        justify-content:flex-start;
+    }
+    .menu-icons__line{    
+        margin: auto;
+    }
+    .menu-icons__settings{    
+        margin: auto;
+        justify-content:flex-end;
+
+    }
+    .menu-icons__find{
+        margin: auto;
+        justify-content:flex-end; 
+    }
+    
+    .menu-icons__contacts, .menu-icons__secondline, .menu-icons__message, .menu-icons__tel  {
+        margin: auto;
+        display: none;
+    }
+
+.main-info__repairdevice{ 
+    background-color: white;
+    border: solid 2px #D9FFF5;
+    border-radius: 6px;
+    order: -1;
+    margin: auto;
+    margin-left: 16px;
+    margin-right: 16px;   
+}
+.main-info__brands,.main-info__sendrequest, .main-info__repairstatus,.main-info__sendrequest_logo, .main-info__repairstatus_logo, .main-info__prices, .main-info__adress, .main-info__specialprice, .main-info__reviews, .main-info__logo, .main-info__logomid, .main-info__text_maxhidden, .main-info__text_midlehidden{
+    display: none;
+}
+.main-info__logomin{
+    width: 100%;
+    margin-left: -16px;
+}
+
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+    
+    .menu-icons__burger{
+        margin: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        order: -2;
+        
+    }
+    .menu-icons__line{    
+        margin: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        order: -1;
+        
+    }
+    .menu-icons__logo{    
+        margin: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        order: 1;
+        
+    }
+    
+    .menu-icons__settings{    
+        margin: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        
+        order: 6;
+
+    }
+    .menu-icons__find{
+        margin: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+         
+        order: 7;
+    }
+    .menu-icons__tel {
+        margin: auto;
+        margin-left: auto;
+        margin-right: 8px;
+        order: 2;
+         
+        
+    }
+    .menu-icons__secondline {
+        margin: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        order: 5;
+        
+    }
+    .menu-icons__message {
+        margin: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        order: 3;
+        
+        
+    }
+    .menu-icons__contacts {
+        margin: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        order: 4;
+         
+        
+    }
+
+    .main-info__sendrequest_logo, .main-info__repairstatus_logo, .main-info__brands, .main-info__adress, .main-info__reviews, .main-info__logo, .main-info__logomin, .main-info__text_maxhidden, .main-info__sendrequest, .main-info__repairstatus{
+        display: none;
+    }   
+    .main-info__logomid {
+        border-radius: 5px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .main-info__article {
+        display: flex;
+        flex-direction: row;
+    }
+    .main-info__repairdevice{ 
+        background-color: white;
+        border: solid 2px #D9FFF5;
+        border-radius: 6px;
+        order: -1;
+        margin: auto;
+        margin-left: 16px;
+        margin-right: 16px;   
+    } 
+}
+@media (min-width: 769px) {
+    body {
+        margin-right: 24px;
+    }
+    .main-info {
+        margin-top: 42px;
+        margin-left: 24px;
+    }
+    .main-info__icon {
+        margin-left: -24px;
+        margin-right: 24px;
+    }
+    .main-info__article {
+        display: flex;
+        flex-direction: row;
+    }
+    .main-info__sendrequest, .main-info__repairstatus {
+        display: flex;
+        flex-direction: row;
+        font-family: 'TT Lakes Medium';
+        font-size: 16px;
+        height: 40px; 
+        align-items: center;
+    }
+    .main-info__sendrequest_logo, .main-info__repairstatus_logo{
+        margin-left: 8px;
+        margin-right: 8px;
+        align-content: center;
+    }
+    .main-info__repairstatus{
+    margin-left: 24px;
+    }
+    .main-info__sendrequest{
+        margin-left: auto;
+    }
+
+    .main-info__logo, .main-info__logomin, .main-info__extraservice, .main-info__text_midlehidden, nav {
+        display: none;
+    } 
+    .main-info_everytext{
+        margin-right: 48px;
+    }
+    .main-info__logo {
+        border-radius: 5px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .main-info__menu{
+        flex-wrap: wrap;
+    }
+    .main-info__brands, .main-info__adress, .main-info__adress, .main-info__prices, .main-info__specialprice{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .main-info__brands{
+        background-color: white;
+        border: solid 2px #D9FFF5;
+        border-radius: 6px;
+        order: -1;
+        margin: auto;
+        margin-left: 16px;
+        margin-right: 16px;   
+    }
+}
