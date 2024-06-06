@@ -117,7 +117,7 @@ h1{
 }   
 
 
-@media (max-width: 320px) {                      
+@media (min-width: 320px)  {                      
     .menu-icons__burger{
         margin: auto;
         justify-content:flex-start;
@@ -163,7 +163,7 @@ h1{
 
 }
 
-@media (min-width: 321px) and (max-width: 768px){
+@media (min-width: 768px) {
     
     .menu-icons__burger{
         margin: auto;
@@ -256,7 +256,7 @@ h1{
         margin-right: 16px;   
     } 
 }
-@media (min-width: 769px) {
+@media (min-width: 1120px) {
     body {
         margin-right: 24px;
     }
