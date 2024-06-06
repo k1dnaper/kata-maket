@@ -32,8 +32,6 @@ nav {
     flex-direction:row;
     flex-wrap: wrap;
     background-color: white;
-    border-bottom: solid 1px;
-    border-color: #D9FFF5; 
     width: auto;
     height: 88px;
     align-content: center;
@@ -118,53 +116,40 @@ h1{
 
 
 @media (min-width: 320px)  {                      
-    .menu-icons__burger{
-        margin: auto;
-        justify-content:flex-start;
-    }
-    .menu-icons__logo{    
+    .menu-icons__burger, .menu-icons__logo{
         margin: auto;
         justify-content:flex-start;
     }
     .menu-icons__line{    
         margin: auto;
     }
-    .menu-icons__settings{    
+    .menu-icons__settings, .menu-icons__find{    
         margin: auto;
         justify-content:flex-end;
-
     }
-    .menu-icons__find{
-        margin: auto;
-        justify-content:flex-end; 
-    }
-    
     .menu-icons__contacts, .menu-icons__secondline, .menu-icons__message, .menu-icons__tel  {
         margin: auto;
         display: none;
     }
-
-.main-info__repairdevice{ 
-    background-color: white;
-    border: solid 2px #D9FFF5;
-    border-radius: 6px;
-    order: -1;
-    margin: auto;
-    margin-left: 16px;
-    margin-right: 16px;   
-}
-.main-info__brands,.main-info__sendrequest, .main-info__repairstatus,.main-info__sendrequest_logo, .main-info__repairstatus_logo, .main-info__prices, .main-info__adress, .main-info__specialprice, .main-info__reviews, .main-info__logo, .main-info__logomid, .main-info__text_maxhidden, .main-info__text_midlehidden{
+    .main-info__brands,.main-info__sendrequest, .main-info__repairstatus,.main-info__sendrequest_logo, .main-info__repairstatus_logo, .main-info__prices, .main-info__adress, .main-info__specialprice, .main-info__reviews, .main-info__logo, .main-info__logomid, .main-info__text_maxhidden, .main-info__text_midlehidden{
     display: none;
-}
-.main-info__logomin{
+    }
+    .main-info__logomin{
     width: 100%;
     margin-left: -16px;
-}
+    }
+    .main-info__repairdevice:hover, .main-info__extraservice:hover {
+        background-color: white;
+        border: solid 2px #D9FFF5;
+        border-radius: 6px;
+    }
 
 }
 
 @media (min-width: 768px) {
-    
+    .menu-icons__contacts, .menu-icons__secondline, .menu-icons__message, .menu-icons__tel, .main-info__brands,.main-info__sendrequest, .main-info__repairstatus,.main-info__sendrequest_logo, .main-info__repairstatus_logo, .main-info__prices, .main-info__adress, .main-info__specialprice, .main-info__reviews, .main-info__logo, .main-info__logomid, .main-info__text_maxhidden, .main-info__text_midlehidden {
+        display: flex;
+    }
     .menu-icons__burger{
         margin: auto;
         margin-left: 8px;
@@ -186,29 +171,24 @@ h1{
         order: 1;
         
     }
-    
     .menu-icons__settings{    
         margin: auto;
         margin-left: 8px;
         margin-right: 8px;
-        
         order: 6;
 
     }
     .menu-icons__find{
         margin: auto;
         margin-left: 8px;
-        margin-right: 8px;
-         
+        margin-right: 8px;   
         order: 7;
     }
     .menu-icons__tel {
         margin: auto;
         margin-left: auto;
         margin-right: 8px;
-        order: 2;
-         
-        
+        order: 2;  
     }
     .menu-icons__secondline {
         margin: auto;
@@ -221,19 +201,14 @@ h1{
         margin: auto;
         margin-left: 8px;
         margin-right: 8px;
-        order: 3;
-        
-        
+        order: 3;   
     }
     .menu-icons__contacts {
         margin: auto;
         margin-left: 8px;
         margin-right: 8px;
-        order: 4;
-         
-        
+        order: 4;   
     }
-
     .main-info__sendrequest_logo, .main-info__repairstatus_logo, .main-info__brands, .main-info__adress, .main-info__reviews, .main-info__logo, .main-info__logomin, .main-info__text_maxhidden, .main-info__sendrequest, .main-info__repairstatus{
         display: none;
     }   
@@ -245,18 +220,17 @@ h1{
     .main-info__article {
         display: flex;
         flex-direction: row;
-    }
-    .main-info__repairdevice{ 
+    } 
+    .main-info__prices:hover, .main-info__specialprice:hover {
         background-color: white;
         border: solid 2px #D9FFF5;
         border-radius: 6px;
-        order: -1;
-        margin: auto;
-        margin-left: 16px;
-        margin-right: 16px;   
-    } 
+    }
 }
 @media (min-width: 1120px) {
+    .main-info__sendrequest_logo, .main-info__repairstatus_logo, .main-info__brands, .main-info__adress, .main-info__reviews, .main-info__logo, .main-info__logomin, .main-info__text_maxhidden, .main-info__sendrequest, .main-info__repairstatus{
+        display: flex;
+    } 
     body {
         margin-right: 24px;
     }
@@ -310,13 +284,9 @@ h1{
         margin-left: 24px;
         margin-right: 24px;
     }
-    .main-info__brands{
+    .main-info__adress:hover, .main-info__reviews:hover, .main-info__brands:hover {
         background-color: white;
         border: solid 2px #D9FFF5;
         border-radius: 6px;
-        order: -1;
-        margin: auto;
-        margin-left: 16px;
-        margin-right: 16px;   
     }
 }
